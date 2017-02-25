@@ -1,7 +1,7 @@
 var titles = document.querySelectorAll('section h2');
 
 for (var i = 0; i < titles.length; i++) {
-  titles[i].addEventListener('click', toggleSibblings);
+  //titles[i].addEventListener('click', toggleSibblings);
 }
 
 function toggleSibblings(){

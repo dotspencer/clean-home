@@ -3,7 +3,9 @@ $green: mediumseagreen;
 $gold: gold;
 $red: indianred;
 
-html{background-color: $gold;}
+html{
+  background-color: $gold;
+}
 
 body {
   background-color: white;
@@ -11,7 +13,7 @@ body {
   font-size: 1.2em;
   display: inline-block;
   width: 100%;
-  margin: 6px 0;
+  margin: 0;
 }
 .content{
   width: 512px;
@@ -23,18 +25,7 @@ p, td{
   //margin: 1.2em 0;
 }
 div.greeting{
-  margin: 180px 0 240px;
-}
-table {
-  margin: 0 -100px;
-  border-collapse: collapse;
-}
-td{
-  border: 1px solid lightgray;
-  padding: 0 20px;
-  &:first-child {
-    font-weight: bold;
-  }
+  margin: 140px 0;
 }
 section{
   margin: 80px 0;
@@ -48,7 +39,7 @@ section{
     transition: all .15s;
   }
   h2{
-    cursor: pointer;
+    // cursor: pointer;
   }
 }
 section.web {
