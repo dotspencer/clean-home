@@ -6,7 +6,6 @@ $red: indianred;
 html{
   background-color: $gold;
 }
-
 body {
   background-color: white;
   font-family: 'GTEestiDisplay-Medium',-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;
@@ -15,6 +14,7 @@ body {
   width: 100%;
   margin: 0;
 }
+
 .content{
   width: 512px;
   margin: 60px auto;
@@ -22,33 +22,45 @@ body {
 p, td{
   color: #333;
   line-height: 1.7em;
-  //margin: 1.2em 0;
 }
 div.greeting{
   margin: 140px 0;
 }
-section{
-  margin: 80px 0;
-  a{
-    text-decoration: none;
-    border-bottom: 2px solid transparent;
-    padding-bottom: 2px;
-    &:hover{
-      border-bottom: 2px solid;
-    }
-    transition: all .15s;
-  }
-  h2{
-    // cursor: pointer;
+a{
+  text-decoration: none;
+  border-bottom: 2px solid rgba(0,0,0,0.1);
+  padding-bottom: 2px;
+  color: inherit;
+  transition: .1s border-bottom;
+  &:hover{
+    border-bottom: 2px solid #333;
   }
 }
+h1{
+  font-size: 2.5em;
+}
+a.go{
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  border-radius: 50%;
+  border: 0;
+  background-image: url(/img/arrow.svg);
+}
+section{
+  margin: 80px 0;
+}
 section.web {
-  h2, a{
+  h2{
     color: $green;
+  }
+  a.go{
+    color: white;
+    background-color: $green;
   }
 }
 section.mobile {
-  h2, a{
+  h2{
     color: $blue;
   }
 }
