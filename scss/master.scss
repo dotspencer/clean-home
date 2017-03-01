@@ -1,8 +1,4 @@
-$black: #333;
-$blue: dodgerblue;
-$green: mediumseagreen;
-$gold: gold;
-$red: indianred;
+@import 'colors';
 
 html{
   background-color: $gold;
@@ -31,20 +27,23 @@ a{
   border-bottom: 2px solid rgba(0,0,0,0.1);
   padding-bottom: 2px;
   color: inherit;
-  transition: .1s border-bottom;
+  transition: .15s border-bottom;
   &:hover{
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid $gray;
   }
 }
 h1{
   font-size: 2.5em;
+}
+h2{
+  font-size: 1.8em;
 }
 a.go{
   color: white;
   background-color: rgba(0, 0, 0, 0.1);
   transition: .15s background;
   &:hover{
-    background-color: $black;
+    background-color: $gray;
   }
 
   width: 20px;
