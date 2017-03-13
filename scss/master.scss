@@ -1,5 +1,12 @@
 @import 'colors';
 
+@mixin fadeMeIn($delay){
+  animation: appear 1s;
+  animation-delay: $delay;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
 html{
   background-color: $gold;
 }
@@ -12,19 +19,16 @@ body {
   margin: 0;
 }
 .content{
-  width: 512px;
+  width: 540px;
   margin: 60px auto;
 }
 p, td{
   color: $black;
   line-height: 1.7em;
 }
-div.greeting{
-  margin: 140px 0;
-}
 a{
   text-decoration: none;
-  border-bottom: 2px solid rgba(0,0,0,0.1);
+  border-bottom: 2px solid $lightgray;
   padding-bottom: 2px;
   color: inherit;
   transition: .15s border-bottom;
@@ -58,17 +62,41 @@ a.go{
   background-size: 20px;
   margin-bottom: -4px;
 }
+
+.greeting{
+  margin: 260px 0 160px;
+  @include fadeMeIn(.25s);
+}
 section{
+  @include fadeMeIn(1s);
   margin: 80px 0;
 }
 section.web {
   h2{
-    color: $green;
+    // color: $green;
   }
 }
 section.mobile {
   h2{
-    color: $blue;
+    // color: $blue;
+  }
+}
+@keyframes appear{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+.bundle{
+  margin: 40px 0;
+  span{
+    background-color: $lightgray;
+    color: $gray;
+    font-weight: 100;
+    border-radius: 4px;
+    padding: 3px 6px;
   }
 }
 
@@ -78,4 +106,7 @@ section.mobile {
 }
 .hidden{
   display: none;
+}
+.red{
+  color: $red;
 }

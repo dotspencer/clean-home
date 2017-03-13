@@ -1,8 +1,7 @@
-var titles = document.querySelectorAll('section h2');
-
+/*var titles = document.querySelectorAll('section h2');
 for (var i = 0; i < titles.length; i++) {
   //titles[i].addEventListener('click', toggleSibblings);
-}
+}*/
 
 function toggleSibblings(){
   var parent = this.parentNode;
@@ -15,4 +14,9 @@ function toggleSibblings(){
       p.classList.add('hidden');
     }
   }
+}
+
+var links = document.querySelectorAll('a');
+for (var i = 0; i < links.length; i++) {
+  links[i].setAttribute('target', '_blank');
 }

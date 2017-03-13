@@ -10,15 +10,12 @@ body {
   margin: 0; }
 
 .content {
-  width: 512px;
+  width: 540px;
   margin: 60px auto; }
 
 p, td {
   color: #333;
   line-height: 1.7em; }
-
-div.greeting {
-  margin: 140px 0; }
 
 a {
   text-decoration: none;
@@ -53,14 +50,33 @@ a.go {
   a.go:hover {
     background-color: #888; }
 
+.greeting {
+  margin: 260px 0 160px;
+  animation: appear 1s;
+  animation-delay: 0.25s;
+  animation-fill-mode: forwards;
+  opacity: 0; }
+
 section {
+  animation: appear 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
   margin: 80px 0; }
 
-section.web h2 {
-  color: mediumseagreen; }
-
-section.mobile h2 {
-  color: dodgerblue; }
+@keyframes appear {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.bundle {
+  margin: 40px 0; }
+  .bundle span {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #888;
+    font-weight: 100;
+    border-radius: 4px;
+    padding: 3px 6px; }
 
 #stars {
   padding: 10px;
@@ -68,5 +84,8 @@ section.mobile h2 {
 
 .hidden {
   display: none; }
+
+.red {
+  color: indianred; }
 
 /*# sourceMappingURL=master.css.map */
