@@ -1,0 +1,22 @@
+// Colors
+$black: #333;
+$gray: #888;
+$lightgray: rgba(0, 0, 0, 0.1);
+$blue: dodgerblue;
+$green: mediumseagreen;
+$gold: gold;
+$red: indianred;
+
+// Mixins
+@mixin fadeMeIn($delay){
+  animation: appear 1s;
+  animation-delay: $delay;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+// Fonts
+$large: 2.5em;
+$medium: 1.7em;
+$normal: 1em;
+$small: .7em;
